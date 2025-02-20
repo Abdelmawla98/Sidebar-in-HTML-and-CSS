@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <title>css</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .hamburger-img{
+        width: 50px;
+      }
+      .hamburger-menu{
+        display: inline-block;
+        margin-left: 40px;
+        cursor: pointer;
+      }
+      .hamburger-menu:focus{
+        opacity: 0;
+        
+      }
+      .hamburger-menu:focus + .side-bar{
+        left: 0;
+      }
+      .side-bar:focus{
+        left: 0;
+      }
+      .main{
+        background-image: url(images/pexels-pixabay-326333.jpg);
+        background-size:contain;
+        background-position: center;
+        height: 800px;
+        width: 1500px;
+        position: relative;
+      }
+      .main .side-bar{
+        background-color: rgba(255, 255, 255, 0.161);
+        position: absolute;
+        left: -390px;
+        top:0;
+        bottom: 0;
+        width: 400px;
+        transition: left 0.5s ease-in-out;
+        box-shadow:inset 5px 10px 5px rgba(255, 255, 255, 0.161);
+      }
+      .top{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+        border-bottom: 4px solid rgba(255, 255, 255, 0.161);
+      }
+      .top .closing-icon{
+        width: 20px;
+        height: 20px;
+      }
+      .top .CodingLab-p{
+        color: white;
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+      }
+      .u-list{
+        display: flex;
+        flex-direction: column;
+        color: white;
+        list-style: none;
+      }
+      .u-list li{
+        margin-bottom: 20%;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="main">
+      <div class="hamburger-menu" tabindex="0">
+        <img class="hamburger-img" src="icons/menu.png" alt="Menu">
+      </div>
+      <div class="side-bar">
+        <div class="top">
+          <p class="CodingLab-p">CodingLab</p>
+          <img class="closing-icon" src="icons/close.png" alt="">
+        </div>
+        <ul class="u-list">
+          <li>Dashboard</li>
+          <li>Shortcuts</li>
+          <li>Overview</li>
+          <li>Events</li>
+          <li>About</li>
+          <li>Services</li>
+          <li>Contact</li>
+          <li>Feedback</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
