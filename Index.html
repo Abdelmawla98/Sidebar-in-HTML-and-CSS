@@ -35,7 +35,7 @@
         position: relative;
       }
       .main .side-bar{
-        background-color: rgba(255, 255, 255, 0.161);
+        background-color: rgba(255, 255, 255, 0.097);
         position: absolute;
         left: -390px;
         top:0;
@@ -51,6 +51,7 @@
         border-bottom: 4px solid rgba(255, 255, 255, 0.161);
       }
       .top .closing-icon{
+        cursor: pointer;
         width: 20px;
         height: 20px;
       }
@@ -67,7 +68,15 @@
         list-style: none;
       }
       .u-list li{
+        cursor: pointer;
         margin-bottom: 20%;
+        display: flex;
+        align-items: center;
+      }
+      .icon{
+        margin-right: 10px;
+        width: 30px;
+        height: 30px;
       }
     </style>
   </head>
@@ -83,14 +92,34 @@
           <img class="closing-icon" src="icons/close.png" alt="">
         </div>
         <ul class="u-list">
-          <li>Dashboard</li>
-          <li>Shortcuts</li>
-          <li>Overview</li>
-          <li>Events</li>
-          <li>About</li>
-          <li>Services</li>
-          <li>Contact</li>
-          <li>Feedback</li>
+          <li>
+            <span><img class="icon" src="icons/dashboard.png" alt=""></span>
+            Dashboard
+          </li>
+          <li>
+            <span><img class="icon" src="icons/shortcut.png" alt=""></span>
+            Shortcuts
+          </li>
+          <li>
+            <span><img class="icon" src="icons/search-file.png" alt=""></span>
+            Overview
+          </li>
+          <li>
+            <span><img class="icon" src="icons/information.png" alt=""></span>
+            Events
+          </li>
+          <li>
+            <span><img class="icon" src="icons/customer-service.png" alt=""></span>
+            About</li>
+          <li>
+            <span><img class="icon" src="icons/bubble.png" alt=""></span>
+            Services</li>
+          <li>
+            <span><img class="icon" src="icons/customer-service.png" alt=""></span>
+            Contact</li>
+          <li>
+            <span><img class="icon" src="icons/rate.png" alt=""></span>
+            Feedback</li>
         </ul>
       </div>
     </div>
