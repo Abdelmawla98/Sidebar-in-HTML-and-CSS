@@ -17,10 +17,14 @@
         margin-left: 30px;
         cursor: pointer;
         filter: invert(.7);
+        transition: filter 1s, box-shadow 1s;
       }
       .hamburger-menu:focus{
         opacity: 0;
-        
+      }
+      .hamburger-menu:hover{
+        filter: invert(1);
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.261);
       }
       .hamburger-menu:focus + .side-bar{
         left: 0;
@@ -56,6 +60,7 @@
         cursor: pointer;
         width: 20px;
         height: 20px;
+        filter:invert(.7);
       }
       .top .CodingLab-p{
         color: white;
@@ -88,6 +93,7 @@
         margin-top: 150px;
         display: flex;
         justify-content: center;
+        list-style: none;
       }
       .bottom-part .social-icon{
         filter: invert(.5);
