@@ -13,8 +13,10 @@
       }
       .hamburger-menu{
         display: inline-block;
-        margin-left: 40px;
+        margin-top: 20px;
+        margin-left: 30px;
         cursor: pointer;
+        filter: invert(.7);
       }
       .hamburger-menu:focus{
         opacity: 0;
@@ -69,14 +71,34 @@
       }
       .u-list li{
         cursor: pointer;
-        margin-bottom: 20%;
+        padding: 15px;
         display: flex;
         align-items: center;
       }
+      .u-list li:hover{
+        box-shadow: 5px 0 10px rgba(255, 255, 255, 0.155);
+      }
       .icon{
+        filter: invert(1);
         margin-right: 10px;
         width: 30px;
         height: 30px;
+      }
+      .bottom-part{
+        margin-top: 150px;
+        display: flex;
+        justify-content: center;
+      }
+      .bottom-part .social-icon{
+        filter: invert(.5);
+        width: 30px;
+        height: 30px;
+        margin-right: 20px;
+        transition: filter 0.5s;
+        cursor: pointer;
+      }
+      .bottom-part .social-icon:hover{
+        filter: invert(1);
       }
     </style>
   </head>
@@ -120,6 +142,20 @@
           <li>
             <span><img class="icon" src="icons/rate.png" alt=""></span>
             Feedback</li>
+        </ul>
+        <ul class="bottom-part">
+          <li>
+            <img class="social-icon" src="social-media-icons/facebook-app-symbol.png" alt="">
+          </li>
+          <li>
+            <img class="social-icon" src="social-media-icons/linkedin.png" alt="">
+          </li>
+          <li>
+            <img class="social-icon" src="social-media-icons/twitter.png" alt="">
+          </li>
+          <li>
+            <img class="social-icon" src="social-media-icons/whatsapp.png" alt="">
+          </li>
         </ul>
       </div>
     </div>
