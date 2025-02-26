@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .main{
+        position: relative;
+        background-image: url(dawid-zawila--G3rw6Y02D0-unsplash.jpg);
+        height: 100vh;
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    }
+    .main .side-bar-menu{
+        position: absolute;
+        height: 100vh;
+        width: 250px;
+        position: fixed;
+        background-color: rgba(255, 255, 255, .2);
+        box-shadow: 0 0 6px  rgba(255, 255, 255, .5);
+        left: -260px;
+        transition: left 1s;
+        transition-timing-function: linear;
+    }
+    #check{
+        display: none;
+    }
+    .main .btn-1 i{
+        cursor: pointer;
+        color: white;
+        position: absolute;
+        transition: all 1s;
+    }
+    .side-bar-menu > div:first-child{
+        padding-left: 50px;
+        color: red;
+    }
+    .main .btn-2 i{
+        color: white;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    #check:checked ~ .side-bar-menu{
+        left: 0;
+    }
+    #check:checked ~ .btn-1{
+        opacity: 0;
+    }
+</style>
+    </head>
+
+    <body>
+    <div class="main">
+        <input type="checkbox" id="check">
+        <div class="btn-1">
+            <label for="check">
+                <i class="fas fa-bars"></i>
+            </label>
+        </div>
+        <div class="side-bar-menu">
+            <div>Logo</div>
+            <div class="btn-2">
+                <label for="check">
+                    <i class="fas fa-times"></i>
+                </label>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+                <div>Social-media</div>
+            </div>
+        </div>
+    </div>    
+    </body>
+</html>
