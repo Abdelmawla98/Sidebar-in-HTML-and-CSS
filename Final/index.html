@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            *{
+                margin: 0;
+                padding: 0;
+            }
+            .main{
+                position: relative;
+                background-image: url(pexels-george-dolgikh-551816-1303081.jpg);
+                height: 100vh;
+                width: 100%;
+                background-size: cover;
+            }
+            .main .side-bar{
+                position: fixed;
+                height: 100vh;
+                width: 280px;
+                background-color: rgba(255, 255, 255, .1);
+                box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+            }
+            .side-bar .logo{
+                position: absolute;
+                width: 100%;
+                height: 60px;
+                box-shadow: 0 0 6px rgba(255, 255, 255, .5);
+            }
+            .side-bar .logo a{
+                position: absolute;
+                color: white;
+                font-size: 25px;
+                font-weight: 500;
+                left: 50px;
+                line-height: 60px;
+                text-decoration: none;
+            }
+            .side-bar .menu{
+                position: absolute;
+                top: 80px;
+                width: 100%;
+
+            }
+            .side-bar .menu li{
+                margin-top: 6px;
+                padding: 15px;
+                transition: all .3s;
+            }
+            .side-bar .menu i{
+                color: white;
+                font-size: 20px;
+                padding-right: 8px;
+
+            }
+            .side-bar .menu li:hover{
+                border-left: 1px solid rgba(255, 255, 255, .5);
+                box-shadow: 0 0 4px rgba(255, 255, 255, .5);
+            }
+            .side-bar .menu a{
+                color: white;
+            }
+            .side-bar .Social-media{
+                position: absolute;
+                left: 50%;
+                bottom: 40px;
+                transform: translateX(-50%);
+            }
+            .side-bar .Social-media i{
+                font-size: 24px;
+                color: white;
+                padding: 0 5px;
+                opacity: .5;
+                transition: opacity .3s;
+            }
+            .side-bar .Social-media i:hover{
+                opacity: 1;
+            }
+            #check{
+                display: none;
+            }
+
+            .main .btn-01 i{
+                position: absolute;
+                left: 20px;
+                top: 20px;
+                font-size: 24px;
+                color: white;
+                cursor: pointer;
+            }
+            .main .btn-02 i{
+                position: absolute;
+                right: 20px;
+                top: 20px;
+                font-size: 24px;
+                color: white;
+                cursor: pointer;
+            }
+        </style>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </head>
+
+    <body>
+        <div class="main">
+            <input type="checkbox" id="check">
+            <div class="btn-01">
+                <label for="check">
+                    <i class="fas fa-bars"></i>
+                </label>
+            </div>
+            <div class="side-bar">
+                <div class="logo">
+                    <a href="#">TheLogo</a>
+                </div>
+                <div class="btn-02">
+                    <label for="check">
+                        <i class="fas fa-times"></i>
+                    </label>
+                </div>
+                <div class="menu">
+                <ul>
+                    <li>
+                        <a href="#"> <i class="fas fa-qrcode"></i> Dashboard </a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="fas fa-question-circle"></i> About </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-sliders-h"></i> Services </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-phone-volume"></i> Contact </a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fas fa-comments"></i>Feedback</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="Social-media">
+                <a href="#"> <i class="fab fa-facebook-f"></i> </a>
+                <a href="#"> <i class="fab fa-twitter"></i> </a>
+                <a href="#"> <i class="fab fa-instagram"></i> </a>
+                <a href="#"> <i class="fab fa-youtube"></i> </a>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>
